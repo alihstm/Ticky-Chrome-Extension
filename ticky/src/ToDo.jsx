@@ -70,9 +70,9 @@ export default function ToDo() {
           className="bg-neon-green p-3 rounded-full btn hover:cursor-pointer transition duration-300 hover:shadow-[0_0_15px_#39FF14]"
         >
           {isdark ? (
-            <FaMoon className="text-md" />
-          ) : (
             <FaSun className="text-md" />
+          ) : (
+            <FaMoon className="text-md" />
           )}
         </button>
       </div>
