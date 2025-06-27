@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Ticky",
+  "version": "1.0",
+  "description": "A simple TODO list Chrome extension",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Ticky"
+  },
+  "permissions": [],
+  "icons": {
+    "128": "icon.png"
+  }
+}

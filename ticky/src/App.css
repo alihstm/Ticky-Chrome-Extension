@@ -1,0 +1,61 @@
+:root {
+  --neon-green: #39ff14;
+  --black: #23272f;
+  --white: #f4f4f5;
+  --priority-high: #ef4444;
+  --priority-medium: #fbbf24;
+  --priority-low: #22c55e;
+  --gray-dark: #232626;
+  --gray-light: #e5e7eb;
+}
+.bg-neon-green {
+  background-color: var(--neon-green);
+}
+.bg-black {
+  background-color: var(--black);
+}
+.text-white {
+  color: var(--white);
+}
+
+.priority-border-high {
+  border-left: 6px solid var(--priority-high);
+}
+.priority-border-medium {
+  border-left: 6px solid var(--priority-medium);
+}
+.priority-border-low {
+  border-left: 6px solid var(--priority-low);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-in {
+  animation: fadeIn 0.7s;
+}
+.task-transition {
+  transition: opacity 0.3s, background 0.3s, border-color 0.3s;
+}
+
+.btn {
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+.btn:hover {
+  box-shadow: 0 0 10px var(--neon-green);
+  filter: brightness(1.1);
+}
+.btn:active {
+  filter: brightness(0.95);
+}
+.btn-delete:hover {
+  box-shadow: 0 0 10px var(--priority-high);
+  filter: brightness(1.1);
+}
