@@ -1,7 +1,7 @@
 import { FaSun, FaMoon } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { FaPlus, FaTrash, FaCheck } from "react-icons/fa6";
-import { FaFaceSmileBeam } from "react-icons/fa6";
+import illustration from "./assets/material/undraw_to-do-list_eoia.svg";
 
 const PRIORITY_CLASSES = {
   high: "priority-border-high",
@@ -107,7 +107,7 @@ export default function ToDo() {
             className={`flex flex-col items-center gap-2 text-center text-lg mt-8 ${emptyText}`}
           >
             هیچ کاری اضافه نشده است!
-            <FaFaceSmileBeam className="w-8 h-8" />
+            <img src={illustration} alt="illustration" className="w-24" />
           </li>
         )}
         {tasks
@@ -154,6 +154,9 @@ export default function ToDo() {
             </li>
           ))}
       </ul>
+      <p className={`text-xs ${isdark ? "text-white" : "text-black"}`}>
+        made by Ali Shabani
+      </p>
     </main>
   );
 }
